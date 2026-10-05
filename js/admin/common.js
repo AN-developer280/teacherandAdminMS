@@ -1,0 +1,1 @@
+(function () { IAFMP.Admin = { pages: {} }; })();

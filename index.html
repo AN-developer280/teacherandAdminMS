@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IAFMP Portal</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/styles.css">
+</head><body>
+<main class="max-w-md mx-auto mt-[12vh] px-4 text-center">
+  <h1 class="text-xl font-semibold text-blue-900 mb-1">Integrated Administrative and Faculty Management Portal</h1>
+  <p class="text-slate-500 mb-4">Demo with sample data. Choose a role.</p>
+  <a href="admin/index.html" class="block bg-white border border-slate-200 hover:border-blue-500 rounded-xl p-3 mb-2.5"><b>Admin</b><br><span class="text-slate-500">Setup, timetable control, monitoring</span></a>
+  <a href="teacher/index.html" class="block bg-white border border-slate-200 hover:border-blue-500 rounded-xl p-3 mb-4"><b>Teacher (Areeba)</b><br><span class="text-slate-500">Subjects, timetable, attendance, diary</span></a>
+  <button id="reset" class="text-sm text-blue-600 underline">Reset demo data</button>
+</main>
+<script src="js/core/data.js"></script>
+<script>
+  document.getElementById("reset").onclick = () => { localStorage.removeItem(IAFMP.K.KEY); alert("Demo data reset."); };
+</script>
+</body></html>
